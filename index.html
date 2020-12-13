@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montez&display=swap');
+        html,
+        body {
+            height: 100vh;
+            margin: 0;
+            border: 0;
+        }
+
+        body {      
+            background: #344;
+            padding: 25px
+        }
+
+        /* paper */
+        .fold {
+            postion: relative;
+            height: 200px;
+            padding: 6em;
+            background: #fff
+        }
+
+        /* folding */
+        .fold::before {
+            content: "";
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            border-style: solid;
+            border-width: 0 100px 100px 0;
+            border-color: #ddd #344;
+            transition: all ease 0.5s;
+        }
+
+        .fold:hover::before {
+            border-width: 0 150px 150px 0;
+            border-color: #eee #344
+        }
+        .greeting{
+            font-family: 'Montez', cursive;
+            font-size: 3em;
+        }
+        .letter-body{
+            font-family: 'Cedarville Cursive', cursive;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content" class="fold"> 
+        <div id="greet" class="greeting">Dear test</div>
+        <div id="content" class="letter-body">lorem ipsum</div>
+        <div id="end" class="signaure"></div>
+    </div>
+</body>
+
+</html>
