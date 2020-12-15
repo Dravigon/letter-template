@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montez&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&family=Shadows+Into+Light+Two&family=Pacifico&display=swap');
+        :root{
+			}
         html,
         body {
+			font-size:16px;
             height: 100vh;
             margin: 0;
             border: 0;
@@ -44,16 +47,32 @@
             border-color: #eee #344
         }
         .greeting{
-            font-family: 'Montez', cursive;
-            font-size: 3em;
+				font-family: 'Pacifico', cursive;
+                font-size: 3em;
         }
         .letter-body{
-            font-family: 'Cedarville Cursive', cursive;
+			font-family: 'Shadows Into Light Two', cursive;
             font-size: 2em;
         }
         .signature{
-           font-family: 'Montez', cursive;
+            font-family: 'Caveat', cursive;
+            font-size: 3em;
+    		padding-top:1em;
+
         }
+        .ps{
+				padding-top:2em;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 4em;
+        }
+ @media screen and (max-device-width: 640px) and (orientation: portrait){
+				.fold{
+						padding:3em
+					}
+	  
+		}
+
+
     </style>
 </head>
 
@@ -61,7 +80,8 @@
     <div id="content" class="fold"> 
         <div id="greet"  data-i18n-key="greet"  class="greeting">Dear test</div>
         <div id="content" data-i18n-key="content"  class="letter-body">lorem ipsum</div>
-        <div id="end"  data-i18n-key="signature" class="signaure"></div>
+        <div id="end"  data-i18n-key="signature" class="signature">Yours truly</div>
+        <div id="ps"  data-i18n-key="ps" class="ps">dasdasd</div>
     </div>
 </body>
 
