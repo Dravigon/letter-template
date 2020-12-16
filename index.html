@@ -27,7 +27,7 @@
             postion: relative;
             height: auto;
             padding: 6em;
-            background: rgba(255,255,255,0.6);
+            background: rgba(255,255,255,0.2);
         }
 
         /* folding */
@@ -87,8 +87,8 @@ body {
   position: fixed;
   left: 50%;
   top: 50%;
-  width: 0.4vw;
-  height: 0.4vw;
+  width: 1vw;
+  height: 1vw;
   margin: -0.2vw 0 0 9.8vw;
   animation: ease 200s alternate infinite;
   pointer-events: none;
@@ -102,7 +102,7 @@ body {
   transform-origin: -10vw;
 }
 .firefly::before {
-  background: black;
+  background: rgba(0,0,0,0.9);
   opacity: 0.4;
   animation: drift ease alternate infinite;
 }
@@ -1378,11 +1378,11 @@ body {
 @keyframes flash {
   0%, 30%, 100% {
     opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow;
+    box-shadow: 0 0 0vw 0vw #fff441;
   }
   5% {
     opacity: 1;
-    box-shadow: 0 0 2vw 0.4vw yellow;
+    box-shadow: 0 0 2vw 0.4vw #fff441;
   }
 }
 
@@ -1403,8 +1403,7 @@ body {
 	<div class="firefly"></div>
 	<div class="firefly"></div>
 	<div class="firefly"></div>
-	<div class="firefly"></div>
-	<div class="firefly"></div>
+
     <div id="content" class="fold"> 
         <div id="greet"  data-i18n-key="greet"  class="greeting">Dear test</div>
         <div id="content" data-i18n-key="content"  class="letter-body">lorem ipsum</div>
